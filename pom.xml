@@ -55,6 +55,21 @@
 				<artifactId>molindo-utils</artifactId>
 				<version>${molindo-utils.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>at.molindo.webtools</groupId>
+				<artifactId>molindo-crawler</artifactId>
+				<version>${molindo-crawler.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.molindo.webtools</groupId>
+				<artifactId>molindo-loganalyzer</artifactId>
+				<version>${molindo-loganalyzer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.molindo.webtools</groupId>
+				<artifactId>molindo-logreplay</artifactId>
+				<version>${molindo-logreplay.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -115,6 +130,9 @@
 						<exclude>LICENSE</exclude>
 						<exclude>README</exclude>
 						<exclude>src/*/java/org/**</exclude>
+						<exclude>**/.gitignore</exclude>
+						<exclude>**/*.dtd</exclude>exclude>
+						<exclude>**/*.properties</exclude>
 					</excludes>
 					<strictCheck>true</strictCheck>
 					<aggregate>true</aggregate>
@@ -156,5 +174,8 @@
 
 	<properties>
 		<molindo-utils.version>1.0-SNAPSHOT</molindo-utils.version>
+		<molindo-crawler.version>1.0-SNAPSHOT</molindo-crawler.version>
+		<molindo-loganalyzer.version>1.0-SNAPSHOT</molindo-loganalyzer.version>
+		<molindo-logreplay.version>1.0-SNAPSHOT</molindo-logreplay.version>
 	</properties>
 </project>
