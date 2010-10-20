@@ -129,7 +129,7 @@
 					<excludes>
 						<exclude>LICENSE</exclude>
 						<exclude>README</exclude>
-						<exclude>src/*/java/org/**</exclude>
+						<exclude>src/*/java/at/molindo/thirdparty/**</exclude>
 						<exclude>**/.gitignore</exclude>
 						<exclude>**/*.dtd</exclude>exclude>
 						<exclude>**/*.properties</exclude>
