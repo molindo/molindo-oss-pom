@@ -70,8 +70,46 @@
 				<artifactId>molindo-logreplay</artifactId>
 				<version>${molindo-logreplay.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>at.molindo</groupId>
+				<artifactId>molindo-notify</artifactId>
+				<version>${molindo-notify.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.molindo</groupId>
+				<artifactId>molindo-wicket-utils</artifactId>
+				<version>${molindo-wicket-utils.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- JUNIT DEPENDENCY FOR TESTING -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<resources>
@@ -131,7 +169,8 @@
 						<exclude>README</exclude>
 						<exclude>src/*/java/at/molindo/thirdparty/**</exclude>
 						<exclude>**/.gitignore</exclude>
-						<exclude>**/*.dtd</exclude>exclude>
+						<exclude>**/*.dtd</exclude>
+						exclude>
 						<exclude>**/*.properties</exclude>
 					</excludes>
 					<strictCheck>true</strictCheck>
@@ -177,5 +216,10 @@
 		<molindo-crawler.version>1.0-SNAPSHOT</molindo-crawler.version>
 		<molindo-loganalyzer.version>1.0-SNAPSHOT</molindo-loganalyzer.version>
 		<molindo-logreplay.version>1.0-SNAPSHOT</molindo-logreplay.version>
+		<molindo-notify.version>1.0-SNAPSHOT</molindo-notify.version>
+		<molindo-wicket-utils.version>1.0-SNAPSHOT</molindo-wicket-utils.version>
+		
+		<slf4j.version>1.6.1</slf4j.version>
+		<log4j.version>1.2.16</log4j.version>
 	</properties>
 </project>
