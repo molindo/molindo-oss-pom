@@ -26,6 +26,11 @@
 		<url>git@github.com:molindo/molindo-oss-pom.git</url>
 	</scm>
 
+	<ciManagement>
+		<system>TeamCity</system>
+		<url>https://oss.molindo.at/</url>
+	</ciManagement>
+
 	<organization>
 		<name>Molindo GmbH</name>
 		<url>http://www.molindo.at/</url>
