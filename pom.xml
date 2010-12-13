@@ -274,7 +274,7 @@
 		<molindo-notify.version>1.0-SNAPSHOT</molindo-notify.version>
 		<molindo-wicket-utils.version>1.0-SNAPSHOT</molindo-wicket-utils.version>
 
-		<slf4j.version>1.6.1</slf4j.version>
+		<slf4j.version>1.5.8</slf4j.version>
 		<log4j.version>1.2.16</log4j.version>
 		<findbugs.version>1.3.9</findbugs.version>
 		<junit.version>4.7</junit.version>
