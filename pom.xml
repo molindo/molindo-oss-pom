@@ -196,6 +196,18 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<configuration>
@@ -213,8 +225,8 @@
 						<exclude>src/*/java/at/molindo/thirdparty/**</exclude>
 						<exclude>**/.gitignore</exclude>
 						<exclude>**/*.dtd</exclude>
-						exclude>
 						<exclude>**/*.properties</exclude>
+						<exclude>src/test/**/*-expected.*</exclude>
 					</excludes>
 					<strictCheck>true</strictCheck>
 					<aggregate>true</aggregate>
