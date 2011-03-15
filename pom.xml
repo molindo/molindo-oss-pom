@@ -16,9 +16,17 @@
 
 	<name>Molindo OSS POM</name>
 	<description>
-	  Base POM for our OSS contributions
+	  Base POM for Molindo OSS contributions
 	</description>
 	<url>http://github.com/molindo/molindo-oss-pom</url>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<scm>
 		<connection>scm:git:git@github.com:molindo/molindo-oss-pom.git</connection>
