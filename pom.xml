@@ -275,6 +275,7 @@
 	</reporting>
 
 	<properties>
+		<!-- by default, use most recent snapshot for dependency mgt -->
 		<molindo-utils.version>1.0-SNAPSHOT</molindo-utils.version>
 		<molindo-crawler.version>1.0-SNAPSHOT</molindo-crawler.version>
 		<molindo-loganalyzer.version>1.0-SNAPSHOT</molindo-loganalyzer.version>
