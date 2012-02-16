@@ -233,6 +233,7 @@
 						<exclude>**/.gitignore</exclude>
 						<exclude>**/*.dtd</exclude>
 						<exclude>**/*.properties</exclude>
+						<exclude>**/*.html</exclude>
 						<exclude>src/test/**/*-expected.*</exclude>
 					</excludes>
 					<strictCheck>true</strictCheck>
