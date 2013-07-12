@@ -188,6 +188,35 @@
 				</excludes>
 			</testResource>
 		</testResources>
+		<pluginManagement>
+			<plugins>
+				<!-- m2 lifecycle mapping -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-enforcer-plugin</artifactId>
+										<versionRange>[1.0.0,)</versionRange>
+										<goals>
+											<goal>enforce</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -303,7 +332,7 @@
 
 	<properties>
 		<!-- by default, use most recent snapshot for dependency mgt -->
-		<molindo-utils.version>1.0-SNAPSHOT</molindo-utils.version>
+		<molindo-utils.version>1.1-SNAPSHOT</molindo-utils.version>
 		<molindo-crawler.version>1.0-SNAPSHOT</molindo-crawler.version>
 		<molindo-loganalyzer.version>1.0-SNAPSHOT</molindo-loganalyzer.version>
 		<molindo-logreplay.version>1.0-SNAPSHOT</molindo-logreplay.version>
