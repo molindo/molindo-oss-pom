@@ -4,7 +4,7 @@ language: java
 # checkout settings
 before_install: 
   - "git clone -b master https://github.com/molindo/travis-settings.git target/travis-settings"
-  - "diff -qw ~/.m2/settings.xml target/travis-settings/defaultSettings.xml || ( cat ~/.m2/settings.xml && false )"
+  - "diff -w ~/.m2/settings.xml target/travis-settings/defaultSettings.xml"
 
 install: "mvn --settings=target/travis-settings/settings.xml -B -DskipTests=true install"
 script:  "mvn --settings=target/travis-settings/settings.xml -B clean deploy"
