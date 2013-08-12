@@ -1,9 +1,13 @@
 # deploy Maven artifacts to Sonatype OSS repo
 language: java
 
-before_install: "cat ~/.m2/settings.xml"
-before_script: "git clone -b master https://github.com/molindo/travis-settings.git target/travis-settings"
-script: "mvn --settings=target/travis-settings/settings.xml clean deploy"
+# checkout settings
+before_install: 
+  - "git clone -b master https://github.com/molindo/travis-settings.git target/travis-settings"
+  - "diff -qw ~/.m2/settings.xml ~/.m2/defaultSettings.xml || ( cat ~/.m2/settings.xml && false )"
+
+install: "mvn --settings=target/travis-settings/settings.xml -B -DskipTests=true install"
+script:  "mvn --settings=target/travis-settings/settings.xml -B clean deploy"
 
 # travis encrypt 'CI_DEPLOY_USERNAME=username'
 # travis encrypt 'CI_DEPLOY_PASSWORD=password'
