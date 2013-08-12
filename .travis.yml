@@ -3,10 +3,10 @@ language: java
 before_install: "git clone -b master https://github.com/molindo/travis-settings.git target/travis-settings"
 script: "mvn --settings target/travis-settings/settings.xml clean deploy"
 
-# travis encrypt "CI_DEPLOY_USERNAME=username"
-# travis encrypt "CI_DEPLOY_PASSWORD=password"
+# travis encrypt 'CI_DEPLOY_USERNAME=username'
+# travis encrypt 'CI_DEPLOY_PASSWORD=password'
 env:
   global:
     - secure: "NK0VTmNrvkAP6tpl+a4+IDHScUna+FXWQijgQEA6TBlW3W7JeBqAiFUlAJL5qUzPX2IAM7JzMLAVxxqHAl/2b59LbCSt3Kdmv9tKbq0x89EHCurEy2LmGYIAjroxpQzQoUkT/6ePoo7eOA6RfODv1hAfz1n+4ujsuNby/ldVt9M="
-    - secure: "JbYN9QcsBvm8onG2oH9cSd7BVtF8UbaZvENuHe2U1Ak0tdjd9zY/M9t9Af7t2wP5LwH6H1sDgIEFBkg0SfVD0/CUVnWp6J4JR/dznCGy69NJfyz+MSVn7pW9ismEArZgfYYw96C+y1FIHVp/fZLh6W1q/wY9MNrzeyOonz96nMQ="
+    - secure: "LjCDhi4PRbozmLC18lGamb1qTi1xs26AoIoMTGN0TaDKcokzeR6t+bfyGO5LkqN3813a/iAUhBNj+P+jqTXDc96VdLTdiVLOKdSpXEVLQGg9MtSfR983lS2ILx3Lk6eWOaIKlmlBPtDM3Oy4bIGlog4yxZateizJvGXMjiIyrPM="
 
