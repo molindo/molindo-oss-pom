@@ -1,12 +1,14 @@
 # deploy Maven artifacts to Sonatype OSS repo
 language: java
-before_install: "git clone -b master https://github.com/molindo/travis-settings.git target/travis-settings"
-script: "mvn --settings target/travis-settings/settings.xml clean deploy"
+
+before_install: "cat ~/.m2/settings.xml"
+before_script: "git clone -b master https://github.com/molindo/travis-settings.git target/travis-settings"
+script: "mvn --settings=target/travis-settings/settings.xml clean deploy"
 
 # travis encrypt 'CI_DEPLOY_USERNAME=username'
 # travis encrypt 'CI_DEPLOY_PASSWORD=password'
 env:
   global:
     - secure: "NK0VTmNrvkAP6tpl+a4+IDHScUna+FXWQijgQEA6TBlW3W7JeBqAiFUlAJL5qUzPX2IAM7JzMLAVxxqHAl/2b59LbCSt3Kdmv9tKbq0x89EHCurEy2LmGYIAjroxpQzQoUkT/6ePoo7eOA6RfODv1hAfz1n+4ujsuNby/ldVt9M="
-    - secure: "LjCDhi4PRbozmLC18lGamb1qTi1xs26AoIoMTGN0TaDKcokzeR6t+bfyGO5LkqN3813a/iAUhBNj+P+jqTXDc96VdLTdiVLOKdSpXEVLQGg9MtSfR983lS2ILx3Lk6eWOaIKlmlBPtDM3Oy4bIGlog4yxZateizJvGXMjiIyrPM="
+    - secure: "D7Jfwsd8o9ArrYln4252ehNJWawhbYUDxqtYCrA2svtXH1SOYa6ePfzT3Hzv/FALJ0xSg3sweYyf5BZ/vjyUT72pHfg+hjLozcHIOck5ETgknuA0EL24l3nbgDi/Ery4nyfuvJtBm0j7/3duWs+DXW+xoxNWpL+YfoJj1IQq49s="
 
