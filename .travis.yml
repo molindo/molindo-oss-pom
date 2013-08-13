@@ -9,6 +9,18 @@ before_install:
 install: "mvn --settings=target/travis-settings/settings.xml -B -DskipTests=true install"
 script:  "mvn --settings=target/travis-settings/settings.xml -B clean deploy"
 
+# travis encrypt 'token@room'
+notifications:
+  email: false
+  hipchat: 
+    rooms:
+      - secure: "s6q629z4cTkNb2YsmQT8eOPUMykAxkNp3we6h6DGT7oOHD+HucVGVZB4FJ65dnLAnnNZW7kROh2t6PJp/z3N8i0RrEUVTQdokWodNtoBxfn0Lquo5bn+C3BU1pcRk/YNbDG5NerQ3AGTWgNi3eu6Xk8kP6ORGQWFUxaTyI5wGIo="
+    template:
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message} (<a href="%{build_url}">Details</a>/<a href="%{compare_url}">Change view</a>)'
+    format: html
+    on_success: always
+    on_failure: always
+
 # travis encrypt 'CI_DEPLOY_USERNAME=username'
 # travis encrypt 'CI_DEPLOY_PASSWORD=password'
 env:
