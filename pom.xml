@@ -63,37 +63,6 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>at.molindo</groupId>
-				<artifactId>molindo-utils</artifactId>
-				<version>${molindo-utils.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>at.molindo.webtools</groupId>
-				<artifactId>molindo-crawler</artifactId>
-				<version>${molindo-crawler.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>at.molindo.webtools</groupId>
-				<artifactId>molindo-loganalyzer</artifactId>
-				<version>${molindo-loganalyzer.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>at.molindo.webtools</groupId>
-				<artifactId>molindo-logreplay</artifactId>
-				<version>${molindo-logreplay.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>at.molindo</groupId>
-				<artifactId>molindo-notify</artifactId>
-				<version>${molindo-notify.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>at.molindo</groupId>
-				<artifactId>molindo-wicket-utils</artifactId>
-				<version>${molindo-wicket-utils.version}</version>
-			</dependency>
-
-			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
 				<artifactId>annotations</artifactId>
 				<version>${findbugs.version}</version>
@@ -337,14 +306,6 @@
 	</reporting>
 
 	<properties>
-		<!-- by default, use most recent snapshot for dependency mgt -->
-		<molindo-utils.version>1.1-SNAPSHOT</molindo-utils.version>
-		<molindo-crawler.version>1.0-SNAPSHOT</molindo-crawler.version>
-		<molindo-loganalyzer.version>1.0-SNAPSHOT</molindo-loganalyzer.version>
-		<molindo-logreplay.version>1.0-SNAPSHOT</molindo-logreplay.version>
-		<molindo-notify.version>1.0-SNAPSHOT</molindo-notify.version>
-		<molindo-wicket-utils.version>1.0-SNAPSHOT</molindo-wicket-utils.version>
-
 		<slf4j.version>1.7.3</slf4j.version>
 		<log4j.version>1.2.17</log4j.version>
 		<findbugs.version>2.0.1</findbugs.version>
