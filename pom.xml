@@ -66,6 +66,8 @@
 				<groupId>com.google.code.findbugs</groupId>
 				<artifactId>annotations</artifactId>
 				<version>${findbugs.version}</version>
+				<!-- annotations not needed at runtime -->
+				<scope>provided</scope>
 			</dependency>
 
 			<dependency>
