@@ -264,6 +264,7 @@
 						<exclude>**/*.md</exclude>
 						<exclude>src/test/**/*-expected.*</exclude>
 						<exclude>**/*.yml</exclude>
+						<exclude>**/*.so</exclude>
 					</excludes>
 					<strictCheck>true</strictCheck>
 					<aggregate>true</aggregate>
