@@ -265,6 +265,7 @@
 						<exclude>src/test/**/*-expected.*</exclude>
 						<exclude>**/*.yml</exclude>
 						<exclude>**/*.so</exclude>
+						<exclude>**/pom.xml.releaseBackup</exclude>
 					</excludes>
 					<strictCheck>true</strictCheck>
 					<aggregate>true</aggregate>
