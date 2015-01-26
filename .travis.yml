@@ -1,6 +1,11 @@
 # deploy Maven artifacts to Sonatype OSS repo
 language: java
 
+jdk:
+  - oraclejdk8
+  - openjdk7
+  - openjdk6
+
 # checkout settings
 before_install: 
   - "git clone -b master https://github.com/molindo/travis-settings.git target/travis-settings"
