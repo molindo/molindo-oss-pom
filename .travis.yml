@@ -4,10 +4,9 @@ language: java
 jdk:
   - oraclejdk8
   - openjdk7
-  - openjdk6
 
 # checkout settings
-before_install: 
+before_install:
   - "git clone -b master https://github.com/molindo/travis-settings.git target/travis-settings"
   - "diff -wu ~/.m2/settings.xml target/travis-settings/defaultSettings.xml || ( cat ~/.m2/settings.xml && false )"
 
@@ -17,7 +16,7 @@ script:  "mvn --settings=target/travis-settings/settings.xml -B clean deploy"
 # travis encrypt 'token@room'
 notifications:
   email: false
-  hipchat: 
+  hipchat:
     rooms:
       - secure: "s6q629z4cTkNb2YsmQT8eOPUMykAxkNp3we6h6DGT7oOHD+HucVGVZB4FJ65dnLAnnNZW7kROh2t6PJp/z3N8i0RrEUVTQdokWodNtoBxfn0Lquo5bn+C3BU1pcRk/YNbDG5NerQ3AGTWgNi3eu6Xk8kP6ORGQWFUxaTyI5wGIo="
     template:
