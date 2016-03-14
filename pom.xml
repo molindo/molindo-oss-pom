@@ -60,6 +60,10 @@
 		</developer>
 	</developers>
 
+	<modules>
+		<module>molindo-oss-dependencies</module>
+	</modules>
+
 	<build>
 		<resources>
 			<resource>
