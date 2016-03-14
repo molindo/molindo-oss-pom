@@ -10,7 +10,7 @@
 
 	<groupId>at.molindo</groupId>
 	<artifactId>molindo-oss-pom</artifactId>
-	<version>6</version>
+	<version>7-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Molindo OSS POM</name>
